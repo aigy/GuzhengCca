@@ -1,0 +1,64 @@
+body {
+    background: #1a1a1a !important;
+    border: 2px solid rgb(247, 235, 167);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: transparent;
+    color:rgb(247, 235, 167);
+    padding: 8px 0 0 0;
+    text-align: center;
+}
+
+nav.navbar {
+    background: transparent !important;
+    border-bottom: 2px solid rgb(247, 235, 167);
+    margin-bottom: 40px;
+}
+
+.navbar-brand img {
+    height: 65px;
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: rgb(247, 235, 167) !important;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+    background: rgb(247, 235, 167);
+}
+
+.nav-link.active {
+    color: #000 !important;
+    background: rgb(247, 235, 167);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(247, 235, 167)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: rgb(247, 235, 167) !important;
+    border-width: 1.5px !important; 
+    border-radius: 4px
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
