@@ -95,3 +95,7 @@ nav.navbar {
     text-align: center;
     padding: 1rem;
 }
+
+.guzhengJ, .guzhengA {
+    background-color: #111;
+}
