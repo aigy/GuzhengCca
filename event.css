@@ -32,7 +32,7 @@ nav.navbar {
     color: rgb(247, 235, 167) !important;
     font-weight: 600;
     margin: 0 10px;
-    transition: color 0.2s, background 0.2s;
+    transition: color 0.2s;
     border-radius: 5px;
     padding: 8px 16px;
 }
@@ -61,4 +61,42 @@ nav.navbar {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.passE {
+    background-color: #111;
+}
+
+.accordionVideo {
+    max-width: 720px;
+}
+
+.yt {
+    display: flex;
+    justify-content: center;
+}
+
+.yt iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+}
+
+.bg-color {
+    background-color: rgb(255, 255, 233) !important; 
+}
+
+.scrolltop-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 12px 18px;
+  background-color: #b3003b; 
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.scrolltop-btn:hover {
+  background-color: #80002a;
 }
