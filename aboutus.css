@@ -4,7 +4,141 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+
 }
+
+h2 {
+    color: rgb(247, 235, 167) !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+   
+}
+
+hr {
+    border: 1px solid rgb(247, 235, 167) !important;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.short-story {
+       
+    background-image: url('Assets/GuzhengBG.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.the-story {
+    color: rgb(226, 225, 215) !important;
+    text-align: center;
+    max-width: 900px;   
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 0 24px;  
+}
+
+.CCA-details {
+    color: rgb(226, 225, 215) !important;
+    text-align: center;
+    max-width: 900px;   
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 24px;  
+    margin-bottom: 3%;   
+}
+.exco {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    gap: 50px;                
+    padding: 40px;            
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+}
+
+.exco-member {
+    text-align: center;
+    width: 260px;             
+    font-family: 'Segoe UI', sans-serif;
+    color: #e2e1d7;
+    font-size: 1.20em;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+
+.exco-member img {
+    width: 95%;              
+    height: auto;
+    border-radius: 12px;      
+    box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+    margin: 0 auto;
+}
+
+.exco-member h3 {
+    margin-top: 16px;
+    font-size: 1.25em;       
+    text-align: center;
+}
+
+.exco-member p {
+    margin: 6px 0;
+    font-size: 1.15em;        
+    color: #cccccc;
+    text-align: center;
+}
+
+.table {
+    max-width: 800px;         
+    margin: 0 auto;           
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(247, 235, 167);
+    margin-top: 50px;
+}
+
+.cca-details {
+    margin-top: 30px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+.cca-details h6 {
+    color: rgb(247, 235, 167);
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cca-details table {
+    width: 70%;
+    max-width: 500px;
+    min-width: 280px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.cca-details td {
+    font-size: 14.5px;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #dddddd !important;
+    padding: 8px 0;
+    color: #e2e1d7 !important;
+    text-align: center;
+}
+
+.cca-details td.label {
+    font-weight: bold;
+    width: 30%;
+}
+
 
 header {
     background: transparent;
@@ -32,7 +166,7 @@ nav.navbar {
     color: rgb(247, 235, 167) !important;
     font-weight: 600;
     margin: 0 10px;
-    transition: color 0.2s;
+    transition: color 0.2s, background 0.2s;
     border-radius: 5px;
     padding: 8px 16px;
 }
@@ -68,7 +202,7 @@ nav.navbar {
   bottom: 2rem;
   right: 2rem;
   padding: 12px 18px;
-  background-color: #b3003b; /* or something softer, like plum */
+  background-color: #b3003b; 
   color: white;
   border-radius: 4px;
   text-decoration: none;
