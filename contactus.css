@@ -6,11 +6,88 @@ body {
     padding: 0;
 }
 
+hr {
+    border: 1px solid rgb(247, 235, 167) !important;
+    margin: 20px auto;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(247, 235, 167) !important;
+    margin-left: 5%; 
+    
+    padding-bottom: 0.5%;
+}
+
+h3 {
+    color: rgb(247, 235, 167) !important;
+    
+    margin-top: 20px;
+    padding-bottom: 0.5%;
+}
+
+.popup-content h2{
+    margin-left: 20px;
+}
+
+.popup-content {
+    padding-top: 2%;
+    margin-left: 5%;
+    color: white !important;
+}
+
+
+
+
+section {
+    color: white !important;
+    font-size: large;
+    margin-left: 5%;
+    padding-bottom: 2%;
+}
+
+.FreqQuestions{
+padding-top: 3%;
+ margin-left: 5%;
+}
+
+.faq-section {
+    color: white !important;
+    line-height: 35px;
+}
+
 header {
     background: transparent;
     color:rgb(247, 235, 167);
     padding: 8px 0 0 0;
     text-align: center;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 5vw; /* Move form group to the left, but not flush */
+}
+
+.form-container {
+    display: flex;
+    column-gap: 5px;
+}
+
+.form-control {
+    margin-left: 0;
+    width: 60%;
+    max-width: 300px;
+}
+
+button.btn {
+    margin-top: 15px;
+    background-color: lightyellow;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 5vw; /* Align button with form fields */
 }
 
 nav.navbar {

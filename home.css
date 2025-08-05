@@ -57,6 +57,8 @@ nav.navbar {
     border-radius: 4px
 }
 
+
+
 .navbar-nav{
     display: flex;
     justify-content: space-evenly;
