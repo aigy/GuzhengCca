@@ -91,7 +91,7 @@ nav.navbar {
   bottom: 2rem;
   right: 2rem;
   padding: 12px 18px;
-  background-color: #b3003b; 
+  background-color: #b3003b; /* Top button color */
   color: white;
   border-radius: 4px;
   text-decoration: none;
