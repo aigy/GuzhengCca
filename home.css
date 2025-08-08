@@ -139,7 +139,7 @@ nav.navbar {
   bottom: 2rem;
   right: 2rem;
   padding: 12px 18px;
-  background-color: #b3003b; /* or something softer, like plum */
+  background-color: #b3003b; /* Top button color */
   color: white;
   border-radius: 4px;
   text-decoration: none;
@@ -147,4 +147,97 @@ nav.navbar {
 }
 .scrolltop-btn:hover {
   background-color: #80002a;
+}
+
+.feature-card {
+  background-color: #111;
+  border: 1px solid rgb(247, 235, 167);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+            
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+            
+.emoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(247, 235, 167);
+}
+
+.section-content {
+text-align: center;
+padding-bottom: 3rem;
+}
+
+.section-heading {
+text-align: center;
+font-size: 2.25rem;
+font-weight: 800;
+margin-bottom: 2.5rem;
+}
+
+.guzhengJ, .guzhengA {
+background-color: #111;
+color: rgb(255, 255, 255);
+}
+.responsive-grid {
+display: grid;
+gap: 2rem;
+justify-items: center;
+}
+            
+@media (min-width: 768px) {
+  .responsive-grid.md-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+            
+@media (min-width: 1024px) {
+  .responsive-grid.lg-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.student {
+    background-color: rgb(255, 248, 206);
+    color: rgb(0, 0, 0);
+    border-color: rgb(255, 218, 6);
+}
+
+.trainer-card {
+  background-color: rgb(43, 42, 42);
+  color: rgb(207, 193, 193);
+  border: 2px solid rgb(255, 248, 206);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+}
+
+.trainer-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid rgb(255, 248, 206);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.trainer-card h4 {
+  color: rgb(255, 248, 206);
+  font-weight: bold;
+}
+
+.trainer-card p {
+  margin-bottom: 0.5rem;
 }
