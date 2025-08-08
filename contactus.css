@@ -1,3 +1,11 @@
+header {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
 body {
     background: #1a1a1a !important;
     border: 2px solid rgb(247, 235, 167);
@@ -35,8 +43,6 @@ h3 {
     margin-left: 5%;
     color: white !important;
 }
-
-
 
 
 section {
@@ -89,6 +95,11 @@ button.btn {
     cursor: pointer;
     margin-left: 5vw; /* Align button with form fields */
 }
+
+.inquires {
+    margin-left: 2%;
+}
+
 
 nav.navbar {
     background: transparent !important;
@@ -145,7 +156,7 @@ nav.navbar {
   bottom: 2rem;
   right: 2rem;
   padding: 12px 18px;
-  background-color: #b3003b; /* or something softer, like plum */
+  background-color: #b3003b; /* Top button color */
   color: white;
   border-radius: 4px;
   text-decoration: none;
