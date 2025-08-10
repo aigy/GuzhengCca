@@ -30,14 +30,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="home.html">Home</a>
                         </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="event.html">Event</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="contactus.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="event.html">Event</a>
                         </li>
                     </ul>
                 </div>
@@ -45,15 +45,8 @@
         </nav>
     </header>
 
-    <section class="text-light py-5">
-        <div class="container">
-            <div class="scroll-top">
-                <a href="#" class="scrolltop-btn">Back to top</a>
-            </div>
-        </div>
-    </section>
-
-    <body>
+  <div class="bgimg">
+    <div class="container">
 
         <h2>
             Have a question or want to get in touch?
@@ -63,101 +56,205 @@
     
             <br>
             <section>
-            <h3 style="text-decoration: underline;">Our Club's Contact Information:</h3>
-            <br>
-            <p><strong>Email:</strong> guzhengclub@school.edu.sg</p>
-            <p><strong>Phone:</strong> +65 9123 4567</p>
-            <p><strong>Location:</strong> Music Room 3, Level 2, Harmony Secondary School</p>
-            <p><strong>Meeting Time:</strong> Thursdays, 3:30 PM – 5:30 PM</p>
-        </section>
+                <h3 style="text-decoration: underline;">Our Club's Contact Information:</h3>
+                <br>
+                <p><strong>Email:</strong> guzhengclub@school.edu.sg</p>
+                <p><strong>Phone:</strong> +65 9123 4567</p>
+                <p><strong>Location:</strong> Music Room 3, Level 2, Harmony Secondary School</p>
+                <p><strong>Meeting Time:</strong> Thursdays, 3:30 PM – 5:30 PM</p>
 
-       
+                <h3 style="text-decoration: underline;">Here Are Some Frequently Asked Questions</h3>
+                <div class="faq-section">
+                <ul>
+                    <li><strong>What is the Guzheng Club?</strong> - The Guzheng Club is a student-led organization dedicated to promoting the appreciation and performance of the Guzheng, a traditional Chinese musical instrument.</li>
+                    <li><strong>How can I join the Guzheng Club?</strong> - You can join by filling out the form above or contacting us via email.</li>
+                    <li><strong>Do I need prior experience to join?</strong> - No prior experience is required. We welcome beginners and experienced players alike!</li>
+                    <li><strong>When does the club meet?</strong> - We meet every Tuesdays and fridays from 3:30 PM to 5:30 PM in Music Room 3.</li>
+                </ul>
+            </section>
         <hr>
-         <h2>
-            Join Us Now!
-             </h2>
-        <form id="joinForm">
-    <div class="form-group">
-        <label for="fullName">Your full name</label><br>
-        <input type="text" class="form-control" id="fullName" placeholder="Enter Name" required>
-    </div>
 
-    <div class="form-group form-container">
-        <div>
-            <label for="adminNumber">Admin Number</label>
-            <input type="text" class="form-control" id="adminNumber" placeholder="Admin Number" required>
+
+
+      
+
+        <div class="row">
+            <!-- Join CCA Form -->
+            <div class="col-md-6">
+                <div class="join-cca">
+                    <h2 style="padding-bottom: 6%;">Join Us Now!</h2>
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="fullName">Your full name</label><br>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter Name" required>
+                        </div>
+                        <div class="form-group form-container">
+                            <div>
+                                <label for="adminNumber">Admin Number</label>
+                                <input type="text" class="form-control" id="adminNumber" placeholder="Admin Number" required>
+                            </div>
+                            <div>
+                                <label for="schoolDropdown">School</label><br>
+                                <select class="form-control" id="schoolDropdown" required>
+                                    <option value="">Select School</option>
+                                    <option value="SBM">SBM</option>
+                                    <option value="SAS">SAS</option>
+                                    <option value="SHSS">SHSS</option>
+                                    <option value="SIT">SIT</option>
+                                    <option value="SDM">SDM</option>
+                                    <option value="SEG">SEG</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNumber">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" placeholder="Enter Contact Number" required>
+                        </div>
+                        <button type="submit" class="btn btn-light mt-3" style="margin-left: 2vw;">Submit</button>
+                    </form>
+                    <div id="popup" class="popup-overlay" style="display: none;">
+                        <div class="popup-content">
+                            <h2>Thanks for joining the Guzheng Club!</h2>
+                            <p id="popupMessage"></p>
+                            <button onclick="closePopup()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inquiries Form -->
+            <div class="col-md-6">
+                <div class="inquires">
+                    <h3 style="padding-top: 2%;">Still doubtful or have some inquires? <br>Don't be shy and drop us a question</h3>
+                    <form id="inquiryForm" style="width: 100%;" class="inquires">
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="inquiryName" style="color: white !important;">Name</label>
+                            <input type="text" id="inquiryName" class="form-control" placeholder="Name" required />
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="inquiryEmail" style="color: white !important;">Email address</label>
+                            <input type="email" id="inquiryEmail" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="inquiryMessage" style="color: white !important;">Message</label>
+                            <textarea class="form-control" id="inquiryMessage" rows="4" placeholder="Your question" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input me-2" type="checkbox" id="inquiryCopy" checked />
+                            <label class="form-check-label" for="inquiryCopy" style="margin-left: auto; color: white !important;">
+                                Send me a copy of this message
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-light mt-3" style="margin-left: auto;" >Send</button>
+                    </form>
+                    <div id="inquiryPopup" class="popup-overlay" style="display: none;">
+                        <div class="popup-content">
+                            <h2>Thank you for your inquiry!</h2>
+                            <p id="inquiryPopupMessage"></p>
+                            <button onclick="closeInquiryPopup()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="schoolDropdown">School</label><br>
-            <select class="form-control" id="schoolDropdown" required>
-                <option value="">Select School</option>
-                <option value="SBM">SBM</option>
-                <option value="SAS">SAS</option>
-                <option value="SHSS">SHSS</option>
-                <option value="SIT">SIT</option>
-                <option value="SDM">SDM</option>
-                <option value="SEG">SEG</option>
-            </select>
-        </div>
-    </div>
+    
+    
 
-    <div class="form-group">
-        <label for="contactNumber">Contact Number</label>
-        <input type="tel" class="form-control" id="contactNumber" placeholder="Enter Contact Number" required>
-    </div>
-
-    <button type="submit" class="btn">Submit</button>
 </form>
 
-<div id="popup" class="popup-overlay" style="display: none;">
-    <div class="popup-content">
-        <h2>Thanks for joining the Guzheng Club!</h2>
-        <p id="popupMessage"></p>
-        <button onclick="closePopup()">Close</button>
+<h2 class="testimonies-heading">
+    Don't believe us? Just listen to some of our alumni's testimonies
+</h2> 
+
+<div class="testimonies-container row">
+    <div class="testimony col-md-10 d-flex align-items-center mb-4">
+        <img src="Assets/Alumni1.png" alt="Alumni 1" class="testimony-img me-3">
+        <p class="testimony-text">
+            "I joined the Guzheng Club in my first year knowing nothing about the instrument. The seniors and instructors were so patient, and soon I was performing in school concerts and even community events. 
+            That foundation led me to join a semi-professional Chinese orchestra after graduation, where I’ve since recorded music for cultural documentaries and performed at international showcases. 
+            The confidence I have today began right here.”
+            <br> — <span class="testimony-name">Rachel Tan, Class of 2021</span>
+        </p>
+    </div>
+
+    <div class="testimony col-md-10 d-flex align-items-center mb-4" style="margin-top: 5%;">
+        <img src="Assets/Alumni2.png" alt="Alumni 2" class="testimony-img me-3">
+        <p class="testimony-text">
+            "Being part of the Guzheng Club was more than just learning music — it was where I found lifelong friends and a deeper appreciation for Chinese culture. Every performance taught me teamwork, 
+            discipline, and confidence. After graduating, I continued my passion for the guzheng and was invited to perform at the National Arts Festival in 2023. Even now, every time I play, I’m reminded 
+            of those afternoons filled with laughter and music.”
+            <br>— <span class="testimony-name">Li Wen, Class of 2019</span>
+        </p>
     </div>
 </div>
 
+
+
+
+
+<div id="inquiryPopup" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <h2>Thank you for your inquiry!</h2>
+        <p id="inquiryPopupMessage"></p>
+        <button onclick="closeInquiryPopup()">Close</button>
+    </div>
+</div>
+</div>
 <script>
-document.getElementById("joinForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // stop page from refreshing
+    document.getElementById("joinForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
 
-    // Get input values
-    const name = document.getElementById("fullName").value;
-    const admin = document.getElementById("adminNumber").value;
-    const school = document.getElementById("schoolDropdown").value;
-    const contact = document.getElementById("contactNumber").value;
+        
+        const name = document.getElementById("fullName").value;
+        const admin = document.getElementById("adminNumber").value;
+        const school = document.getElementById("schoolDropdown").value;
+        const contact = document.getElementById("contactNumber").value;
 
-    // Build message
-    const message = `
-        <strong>Name:</strong> ${name}<br>
-        <strong>Admin Number:</strong> ${admin}<br>
-        <strong>School:</strong> ${school}<br>
-        <strong>Contact Number:</strong> ${contact}
-    `;
+        
+        const message = `
+            <strong>Name:</strong> ${name}<br>
+            <strong>Admin Number:</strong> ${admin}<br>
+            <strong>School:</strong> ${school}<br>
+            <strong>Contact Number:</strong> ${contact}
+        `;
 
-    // Show popup with message
-    document.getElementById("popupMessage").innerHTML = message;
-    document.getElementById("popup").style.display = "block";
+        
+        document.getElementById("popupMessage").innerHTML = message;
+        document.getElementById("popup").style.display = "block";
+    });
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("joinForm").reset(); // reset form after closing
+    }
+    
+
+document.getElementById("inquiryForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get input values
+        const name = document.getElementById("inquiryName").value;
+        const email = document.getElementById("inquiryEmail").value;
+        const message = document.getElementById("inquiryMessage").value;
+        const copy = document.getElementById("inquiryCopy").checked ? "Yes" : "No";
+
+        // Build message
+        const popupMsg = `
+                <strong>Name:</strong> ${name}<br>
+                <strong>Email:</strong> ${email}<br>
+                <strong>Message:</strong> ${message}<br>
+                <strong>Send copy:</strong> ${copy}
+        `;
+
+        // Show popup with message
+        document.getElementById("inquiryPopupMessage").innerHTML = popupMsg;
+        document.getElementById("inquiryPopup").style.display = "block";
 });
 
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    document.getElementById("joinForm").reset(); // reset form after closing
+function closeInquiryPopup() {
+        document.getElementById("inquiryPopup").style.display = "none";
+        document.getElementById("inquiryForm").reset();
 }
 </script>
-
-
-        <div class="FreqQuestions">
-            <h3>Still Have Doubts? Here Are Some Frequently Asked Questions</h3>
-            <div class="faq-section">
-            <ul>
-                <li><strong>What is the Guzheng Club?</strong> - The Guzheng Club is a student-led organization dedicated to promoting the appreciation and performance of the Guzheng, a traditional Chinese musical instrument.</li>
-                <li><strong>How can I join the Guzheng Club?</strong> - You can join by filling out the form above or contacting us via email.</li>
-                <li><strong>Do I need prior experience to join?</strong> - No prior experience is required. We welcome beginners and experienced players alike!</li>
-                <li><strong>When does the club meet?</strong> - We meet every Thursday from 3:30 PM to 5:30 PM in Music Room 3.</li>
-            </ul>
-            </div>
-    </body>
 
     <footer class="text-light text-center py-3 mt-5">
         <p>© 2025 Guzheng Club. All rights reserved.</p>
@@ -166,6 +263,14 @@ function closePopup() {
             <a href="contactus.html" class="text-light text-decoration-none mx-2">Contact Us</a>
         </p>
     </footer>
+     <section class="text-light py-5">
+        <div class="container">
+            <div class="scroll-top">
+                <a href="#" class="scrolltop-btn">Back to top</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
